@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 1rem 2rem;
+    width: 20%;
+    text-align: center;
+    background-color: black;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+li{
+    border: solid white;
+}
+.box{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 20px;
+}
+.box h1{
+    margin-bottom: 10px;
+}

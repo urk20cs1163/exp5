@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#ques1">Question-1</a></li>
+            <li><a href="#ques2">Question-2</a></li>
+            <li><a href="#ques3">Question-3</a></li>
+            <li><a href="#ques4">Question-4</a></li>
+            <li><a href="#ques5">Question-5</a></li>
+            <li><a href="#ques6">Question-6</a></li>
+        </ul>
+    </nav>
+
+    <section id="ques1">
+        <div class="box">
+            <h1>Shortest-Longest Word</h1>
+            <form >
+                Enter a String: <input type="text" id="inp"><br><br>
+                Shortest Word: <span id="sh"></span><br><br>
+                Longest Word: <span id="lg"></span><br><br>
+                <button onclick="strg()" type="button">Submit</button><br><br>
+            </form>
+        </div>
+    </section>
+    
+    <section id="ques2">
+        <div class="box">
+            <h1>Calculate BMI</h1>
+            <form>
+                Enter your weight (in kilograms): <input type="text" id="weight"><br><br>
+                Enter your height (in meters): <input type="text" id="height"><br><br>
+                <button type="button" onclick="calculate()">Get BMI!</button><br><br>
+                <p>
+                    Your BMI is: <span id="score"></span> <br><br>
+                    Your Body type is: <span id="type"></span><br><br>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <section id="ques3">
+        <div class="box">
+            <h1>Fruit Farm!</h1>
+            Rows: <input id="rows" type="text"><br><br>
+            Columns: <input id="cols" type="text"><br><br>
+            <button onclick="grow()">Plant Garden</button><br><br>
+            <div id="garden"></div><br>
+        </div>
+    </section>
+        
+    <section id="ques4">
+        <div class="box">
+            <h1>The Currency Convertor</h1>
+            Convert: <input type="text" id="data">
+            <select id="from">
+                <option>Indian Rupee</option>
+                <option>US Dollar</option>
+            </select>
+            <select id="to">
+                <option>Indian Rupee</option>
+                <option>US Dollar</option>
+            </select><br><br>
+            <button type="button" onclick="convert()">Calculate</button>
+            <span id="answer"></span><br><br> 
+        </div>
+    </section>
+
+    <section id="ques5">
+        <div class="box">
+            <h1>Heads or Tails</h1>
+            <div>
+                <figure><img src="img/head.jpg" id="coin" height="200px"
+                width="200px"><br></figure>
+            </div>
+            <button onclick="flip()" style="margin:5px 0; padding: 5px 10px">Flip</button>
+            <p>
+                Heads Total: <span id="num_heads">0</span><br><br>
+                Tails Total: <span id="num_tails">0</span><br><br>
+            </p>
+        </div>
+    </section>
+
+    <section id="ques6">
+        <div class="box">
+            <h1>Birthday Cake Order Form</h1>
+            Number of 1/2Kg Cakes: <input type="text" id="small"><br><br>
+            Number of 1Kg Cakes: <input type="text" id="medium"><br><br>
+            Number of 2Kg Cakes: <input type="text" id="large"><br><br>
+
+            Tip: 
+            <label><input type="radio" value="10" name="tip">10%</label>
+            <label><input type="radio" value="15" name="tip" checked="checked">15%</label>
+            <label><input type="radio" value="20" name="tip">20%</label><br><br>
+
+            <button type="button" onclick="cake()">Calculate Order</button><br><br>
+            Cost of order: <span id="price"></span><br><br>
+            Total Cost: <span id="c1"></span><br><br>
+            Tip: <span id="c2"></span><br><br>
+            GST: <span>0.0</span>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
